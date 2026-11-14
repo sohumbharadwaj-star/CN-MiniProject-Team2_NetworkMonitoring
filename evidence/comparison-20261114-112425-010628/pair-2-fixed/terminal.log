@@ -1,0 +1,302 @@
+Evidence: /home/soham/cn-team2-project/Team2-D2/runs/comparison-20261114-112425-010628/pair-2-fixed/run-20261114-112843-587248
+(7.00Mbit) (7.00Mbit) *** Configuring hosts
+h1 h2 h3 h4 
+*** Starting controller
+c0 
+*** Starting 2 switches
+s1 (7.00Mbit) s2 (7.00Mbit) ...(7.00Mbit) (7.00Mbit) 
+*** Waiting for switches to connect
+s1 s2 
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4 
+h2 -> h1 h3 h4 
+h3 -> h1 h2 h4 
+h4 -> h1 h2 h3 
+*** Results: 0% dropped (12/12 received)
+
+Running D2 (fixed) including a deliberate h2 agent interruption.
+
+=== NORMAL: requested payload rate 0.1 Mbps per agent ===
+
+[NORMAL] state=INCOMPLETE | toward-server utilization=baseline/unavailable | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    WAITING    None    unavailable   0
+h2    10.0.0.2    WAITING    None    unavailable   0
+h3    10.0.0.3    WAITING    None    unavailable   0
+
+[NORMAL] state=NORMAL | toward-server utilization=4.61% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       2       0.094         21000
+h2    10.0.0.2    LIVE       2       0.105         19600
+h3    10.0.0.3    LIVE       2       0.082         19600
+
+[NORMAL] state=NORMAL | toward-server utilization=4.62% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       4       0.093         40600
+h2    10.0.0.2    LIVE       4       0.105         42000
+h3    10.0.0.3    LIVE       4       0.105         40600
+
+[NORMAL] state=NORMAL | toward-server utilization=4.41% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       6       0.116         68600
+h2    10.0.0.2    LIVE       6       0.104         68600
+h3    10.0.0.3    LIVE       6       0.116         68600
+
+[NORMAL] state=NORMAL | toward-server utilization=4.53% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       8       0.105         89600
+h2    10.0.0.2    LIVE       8       0.105         91000
+h3    10.0.0.3    LIVE       8       0.105         89600
+
+[NORMAL] state=NORMAL | toward-server utilization=4.66% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       10      0.104         117600
+h2    10.0.0.2    LIVE       10      0.104         117600
+h3    10.0.0.3    LIVE       10      0.104         117600
+
+[NORMAL] state=NORMAL | toward-server utilization=4.78% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       12      0.104         145600
+h2    10.0.0.2    LIVE       12      0.104         147000
+h3    10.0.0.3    LIVE       12      0.104         145600
+
+[NORMAL] state=NORMAL | toward-server utilization=4.48% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       14      0.105         166600
+h2    10.0.0.2    LIVE       14      0.102         168000
+h3    10.0.0.3    LIVE       14      0.105         166600
+
+=== HIGH: requested payload rate 3.2 Mbps per agent ===
+
+[HIGH] state=NORMAL | toward-server utilization=4.48% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       15      0.105         180600
+h2    10.0.0.2    LIVE       15      0.105         180600
+h3    10.0.0.3    LIVE       15      0.105         180600
+
+[HIGH] state=NORMAL | toward-server utilization=35.22% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       16      0.101         471800
+h2    10.0.0.2    LIVE       17      0.101         476000
+h3    10.0.0.3    LIVE       17      0.145         481600
+
+[HIGH] state=NORMAL | toward-server utilization=76.16% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       18      2.016         893200
+h2    10.0.0.2    LIVE       18      1.893         884800
+h3    10.0.0.3    LIVE       18      1.982         898800
+
+[HIGH] state=NORMAL | toward-server utilization=75.32% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       19      1.533         1311800
+h2    10.0.0.2    LIVE       20      1.567         1311800
+h3    10.0.0.3    LIVE       19      1.601         1320200
+
+[HIGH] state=HIGH | toward-server utilization=90.47% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       21      1.969         1785000
+h2    10.0.0.2    LIVE       21      2.037         1789200
+h3    10.0.0.3    LIVE       21      1.935         1796200
+
+[HIGH] state=HIGH | toward-server utilization=55.10% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       23      1.799         2192400
+h2    10.0.0.2    LIVE       23      1.766         2193800
+h3    10.0.0.3    LIVE       23      1.744         2200800
+
+[HIGH] state=HIGH | toward-server utilization=81.19% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       24      1.849         2620800
+h2    10.0.0.2    LIVE       25      1.906         2619400
+h3    10.0.0.3    LIVE       24      1.906         2626400
+
+[HIGH] state=HIGH | toward-server utilization=88.48% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       26      2.001         3113600
+h2    10.0.0.2    LIVE       26      2.012         3113600
+h3    10.0.0.3    LIVE       26      1.987         3129000
+
+[HIGH] state=HIGH | toward-server utilization=77.94% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       28      1.771         3568600
+h2    10.0.0.2    LIVE       28      1.669         3570000
+h3    10.0.0.3    LIVE       28      1.693         3579800
+
+[HIGH] state=HIGH | toward-server utilization=95.13% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       30      2.186         4078200
+h2    10.0.0.2    LIVE       30      2.232         4078200
+h3    10.0.0.3    LIVE       29      2.186         4089400
+
+[HIGH] state=HIGH | toward-server utilization=49.93% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       31      1.132         4386200
+h2    10.0.0.2    LIVE       31      1.193         4389000
+h3    10.0.0.3    LIVE       31      1.165         4398800
+
+[HIGH] state=HIGH | toward-server utilization=88.78% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       33      1.970         4851000
+h2    10.0.0.2    LIVE       33      1.950         4852400
+h3    10.0.0.3    LIVE       32      2.026         4862200
+
+[HIGH] state=HIGH | toward-server utilization=87.93% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       35      1.936         5343800
+h2    10.0.0.2    LIVE       35      1.914         5339600
+h3    10.0.0.3    LIVE       34      1.923         5359200
+
+[HIGH] state=HIGH | toward-server utilization=70.11% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       37      2.312         5751200
+h2    10.0.0.2    LIVE       36      2.357         5748400
+h3    10.0.0.3    LIVE       36      2.326         5756800
+
+[HIGH] state=HIGH | toward-server utilization=78.61% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       38      1.740         6213200
+h2    10.0.0.2    LIVE       38      1.830         6214600
+h3    10.0.0.3    LIVE       38      1.796         6221600
+
+[HIGH] state=HIGH | toward-server utilization=93.34% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       40      2.195         6748000
+h2    10.0.0.2    LIVE       40      2.127         6746600
+h3    10.0.0.3    LIVE       39      2.150         6759200
+
+=== RECOVERY: requested payload rate 0.1 Mbps per agent ===
+
+[RECOVERY] state=HIGH | toward-server utilization=78.55% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       41      1.882         7081200
+h2    10.0.0.2    LIVE       41      1.879         7086800
+h3    10.0.0.3    LIVE       41      1.870         7096600
+
+[RECOVERY] state=HIGH | toward-server utilization=87.03% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       44      2.076         7428400
+h2    10.0.0.2    LIVE       43      2.201         7488600
+h3    10.0.0.3    LIVE       43      1.906         7418600
+
+[RECOVERY] state=HIGH | toward-server utilization=4.48% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       46      0.105         7456400
+h2    10.0.0.2    LIVE       46      0.103         7516600
+h3    10.0.0.3    LIVE       45      0.105         7446600
+
+[RECOVERY] state=NORMAL | toward-server utilization=4.50% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       47      0.105         7476000
+h2    10.0.0.2    LIVE       47      0.105         7537600
+h3    10.0.0.3    LIVE       46      0.105         7466200
+
+[RECOVERY] state=NORMAL | toward-server utilization=4.53% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       49      0.106         7504000
+h2    10.0.0.2    LIVE       49      0.106         7564200
+h3    10.0.0.3    LIVE       49      0.106         7492800
+
+[RECOVERY] state=NORMAL | toward-server utilization=4.52% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       51      0.105         7529200
+h2    10.0.0.2    LIVE       51      0.105         7589400
+h3    10.0.0.3    LIVE       51      0.094         7519400
+
+[RECOVERY] state=NORMAL | toward-server utilization=4.50% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       54      0.105         7555800
+h2    10.0.0.2    LIVE       53      0.105         7616000
+h3    10.0.0.3    LIVE       53      0.105         7546000
+
+[RECOVERY] state=NORMAL | toward-server utilization=4.51% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       56      0.105         7582400
+h2    10.0.0.2    LIVE       56      0.105         7642600
+h3    10.0.0.3    LIVE       55      0.105         7572600
+Stopped only the h2 sender; host and switch links remain up.
+
+=== AGENT_STOPPED: requested payload rate 0.1 Mbps per agent ===
+
+[AGENT_STOPPED] state=NORMAL | toward-server utilization=4.46% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       57      0.104         7595000
+h2    10.0.0.2    LIVE       57      0.104         7655200
+h3    10.0.0.3    LIVE       56      0.104         7585200
+
+[AGENT_STOPPED] state=NORMAL | toward-server utilization=3.19% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       58      0.105         7617400
+h2    10.0.0.2    LIVE       57      0.037         7658000
+h3    10.0.0.3    LIVE       57      0.105         7606200
+
+[AGENT_STOPPED] state=NORMAL | toward-server utilization=3.19% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       61      0.105         7645400
+h2    10.0.0.2    LIVE       57      0.000         7658000
+h3    10.0.0.3    LIVE       60      0.105         7634200
+
+[AGENT_STOPPED] state=INCOMPLETE | toward-server utilization=3.00% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       63      0.105         7672000
+h2    10.0.0.2    STALE      57      0.000         7658000
+h3    10.0.0.3    LIVE       62      0.105         7662200
+
+[AGENT_STOPPED] state=INCOMPLETE | toward-server utilization=3.15% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       64      0.105         7693000
+h2    10.0.0.2    STALE      57      0.000         7658000
+h3    10.0.0.3    LIVE       63      0.105         7683200
+Restarted the h2 sender.
+
+=== AGENT_RESTARTED: requested payload rate 0.1 Mbps per agent ===
+
+[AGENT_RESTARTED] state=INCOMPLETE | toward-server utilization=2.92% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       67      0.103         7721000
+h2    10.0.0.2    STALE      57      0.000         7658000
+h3    10.0.0.3    LIVE       66      0.103         7709800
+
+[AGENT_RESTARTED] state=NORMAL | toward-server utilization=4.17% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       68      0.132         7737800
+h2    10.0.0.2    LIVE       2       0.093         7670600
+h3    10.0.0.3    LIVE       67      0.130         7729400
+
+[AGENT_RESTARTED] state=NORMAL | toward-server utilization=4.79% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       70      0.105         7765800
+h2    10.0.0.2    LIVE       4       0.105         7698600
+h3    10.0.0.3    LIVE       69      0.105         7756000
+
+[AGENT_RESTARTED] state=NORMAL | toward-server utilization=4.51% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       72      0.105         7793800
+h2    10.0.0.2    LIVE       6       0.105         7726600
+h3    10.0.0.3    LIVE       72      0.105         7784000
+
+[AGENT_RESTARTED] state=NORMAL | toward-server utilization=4.66% | fixed polling every 1s
+Host  IP          Telemetry  Seq     SDN UDP Mbps  Received data bytes
+h1    10.0.0.1    LIVE       74      0.105         7814800
+h2    10.0.0.2    LIVE       8       0.105         7747600
+h3    10.0.0.3    LIVE       73      0.105         7805000
+
+D2 DEMO CHECKS
+  PASS: host_connectivity
+  PASS: all_agents_observed_with_sdn_stats
+  PASS: malformed_message_rejected
+  PASS: high_alert_observed
+  PASS: load_recovery_observed
+  PASS: interrupted_agent_detected
+  PASS: other_agents_kept_reporting
+  PASS: restarted_agent_detected
+  PASS: polling_stayed_fixed
+Evidence: /home/soham/cn-team2-project/Team2-D2/runs/comparison-20261114-112425-010628/pair-2-fixed/run-20261114-112843-587248
+*** Stopping 1 controllers
+c0 
+*** Stopping 5 links
+.....
+*** Stopping 2 switches
+s1 s2 
+*** Stopping 4 hosts
+h1 h2 h3 h4 
+*** Done

@@ -1,0 +1,29 @@
+{
+  "server_ip": "10.0.0.4",
+  "server_port": 9999,
+  "controller_ip": "127.0.0.1",
+  "controller_port": 6653,
+  "hosts": {"h1": "10.0.0.1", "h2": "10.0.0.2", "h3": "10.0.0.3"},
+  "link_capacity_mbps": 7,
+  "report_interval": 1.0,
+  "fixed_interval": 1.0,
+  "quiet_interval": 2.0,
+  "fast_interval": 0.5,
+  "fast_enter_percent": 50.0,
+  "fast_exit_percent": 40.0,
+  "quiet_after_seconds": 4.0,
+  "status_interval": 0.25,
+  "stale_after": 5.0,
+  "stats_stale_after": 4.0,
+  "alert_above_percent": 70.0,
+  "clear_below_percent": 60.0,
+  "alert_hold_seconds": 2.0,
+  "datagram_bytes": 1400,
+  "phases": [
+    {"name": "NORMAL", "seconds": 15, "mbps_per_agent": 0.1},
+    {"name": "HIGH", "seconds": 32, "mbps_per_agent": 3.2},
+    {"name": "RECOVERY", "seconds": 15, "mbps_per_agent": 0.1},
+    {"name": "AGENT_STOPPED", "seconds": 10, "mbps_per_agent": 0.1, "action": "stop"},
+    {"name": "AGENT_RESTARTED", "seconds": 10, "mbps_per_agent": 0.1, "action": "restart"}
+  ]
+}
